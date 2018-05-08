@@ -140,7 +140,7 @@ Branch.prototype.draw = function() {
 		c.beginPath();
 		c.rotate( entity.rot );
 		if( entity.i === 0 ) {
-			c.fillStyle = ( md ? '#6c6' : ( self.avoiding ? '#c66' : '#6bf' ) );
+			c.fillStyle = ( md ? '#6c6' : ( self.avoiding ? '#red' : '#6bf' ) );
 		} else {
 			c.fillStyle = 'hsla(' + ( md ? 120 : ( self.avoiding ? 0 : 200 ) ) + ', 70%, ' + Math.min( 50, ( 5 + ( ( entity.av / maxv ) * 20 ) ) ) + '%, ' + ( ( ( entityCount - i ) / entityCount ) ) + ')';
 		}

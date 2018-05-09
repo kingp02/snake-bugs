@@ -2,8 +2,8 @@ var a = document.getElementById( 'c' ),
 	c = a.getContext( '2d' );
 
 var chains = [],
-	chainCount = 1,
-	entityCount = 15,
+	chainCount = 5,
+	entityCount = 25,
 	w = a.width,
 	h = a.height,
 	cx = w / 2,

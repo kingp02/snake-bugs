@@ -3,7 +3,7 @@ var a = document.getElementById( 'c' ),
 
 var chains = [],
 	chainCount = 25,
-	entityCount = 50,
+	entityCount = 20,
 	w = a.width,
 	h = a.height,
 	cx = w / 2,

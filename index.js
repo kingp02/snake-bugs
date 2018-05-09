@@ -142,7 +142,7 @@ Branch.prototype.draw = function() {
 		c.beginPath();
 		c.rotate( entity.rot );
 		if( entity.i === 0 ) {
-			c.fillStyle = ( md ? '#6c6' : ( self.avoiding ? '#black' : '#6bf' ) );
+			c.fillStyle = ( md ? '#6c6' : ( self.avoiding ? '#black' : '#yellow' ) );
 		} else {
 			c.fillStyle = 'hsla(' + ( md ? 120 : ( self.avoiding ? 0 : 200 ) ) + ', 70%, ' + Math.min( 50, ( 5 + ( ( entity.av / maxv ) * 20 ) ) ) + '%, ' + ( ( ( entityCount - i ) / entityCount ) ) + ')';
 		}
@@ -180,7 +180,7 @@ function loop() {
 	requestAnimationFrame( loop );
 
 	c.globalCompositeOperation = 'destination-out';
-	c.fillStyle = 'yellow';
+	c.fillStyle = 'black';
 	c.fillRect( 0, 0, a.width, a.height );
 	c.globalCompositeOperation = 'lighter';
 

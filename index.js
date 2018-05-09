@@ -2,7 +2,7 @@ var a = document.getElementById( 'c' ),
 	c = a.getContext( '2d' );
 
 var chains = [],
-	chainCount = 10,
+	chainCount = 25,
 	entityCount = 25,
 	w = a.width,
 	h = a.height,

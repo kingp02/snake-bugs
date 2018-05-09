@@ -180,7 +180,7 @@ function loop() {
 	requestAnimationFrame( loop );
 
 	c.globalCompositeOperation = 'destination-out';
-	c.fillStyle = 'rgba(0, 0, 0, 1)';
+	c.fillStyle = 'yellow';
 	c.fillRect( 0, 0, a.width, a.height );
 	c.globalCompositeOperation = 'lighter';
 
